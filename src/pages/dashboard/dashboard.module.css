@@ -770,6 +770,11 @@
     align-items: start;
   }
 
+  .users .tableBody .row .userData {
+  flex-direction: column;
+    align-items: start;
+}
+
   /* users */
 
   /* subscribers */
