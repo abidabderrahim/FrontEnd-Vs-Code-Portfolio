@@ -1,0 +1,792 @@
+/* status */
+
+.statusData {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statusData .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.statusData .status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.statusData .status .statCard {
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  padding: 16px;
+}
+
+.statusData .status .statCard .statHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statusData .status .statCard .statHeader .statLabel {
+  color: var(--text-color-sec);
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.statusData .status .statCard .statHeader .statIcon {
+  color: var(--section-value);
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.statusData .status .statCard .statValue {
+  color: var(--text-color-prim);
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.statusData .status .statCard .progressWrapper {
+  margin-top: 10px;
+  height: 6px;
+  background: var(--background-color-prim);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.statusData .status .statCard .progressWrapper .progress {
+  height: 100%;
+  background: linear-gradient(90deg, #3865f8, #22c55e);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+/* status */
+
+/* articles */
+
+.articles {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.articles .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.articles .addPostBtn {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    align-self: flex-end;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.articles .addPostBtn .btnText {
+    padding: 0 16px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+    text-transform: capitalize;
+    background: transparent;
+    transition: color 0.25s ease;
+}
+
+.articles .addPostBtn .btnIcon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color-prim);
+    border-left: 1px solid var(--border-color);
+    color: var(--text-color-sec);
+    font-size: 1.2rem;
+    transition: all 0.25s ease;
+}
+
+.articles .addPostBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+.articles .addPostBtn:hover .btnIcon {
+    background: var(--text-color-prim);
+    color: var(--background-color-prim);
+}
+
+.articles .addPostBtn:hover .btnText {
+    color: var(--text-color-prim);
+}
+
+.articles .tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.articles .tableBody .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: all 0.22s ease;
+}
+
+.articles .tableBody .row:hover {
+  background: var(--background-color-sec);
+}
+
+.articles .tableBody .row span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-prim);
+}
+
+.articles .tableBody .row .postData {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.articles .tableBody .row .postData span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.articles .tableBody .row .postData span .rowIcon {
+  color: var(--section-value);
+  font-size: .9rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.articles .tableBody .row .actions {
+  display: flex;
+  gap: 5px;
+}
+
+.articles .tableBody .row .actions button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.articles .tableBody .row .actions button:nth-child(1) {
+  background: #1e90ff;
+  color: white;
+}
+
+.articles .tableBody .row .actions button:nth-child(2) {
+  background: #f0ad4e;
+  color: white;
+}
+
+.articles .tableBody .row .actions button:nth-child(3) {
+  background: #e74c3c;
+  color: white;
+}
+
+.articles .pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.articles .pagination button {
+  padding: 6px 12px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.articles .pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #1e90ff !important;
+}
+
+/* articles */
+
+/* projects */
+
+.projects {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.projects .addProjectBtn {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    align-self: flex-end;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.projects .addProjectBtn .btnText {
+    padding: 0 16px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+    text-transform: capitalize;
+    background: transparent;
+    transition: color 0.25s ease;
+}
+
+.projects .addProjectBtn .btnIcon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color-prim);
+    border-left: 1px solid var(--border-color);
+    color: var(--text-color-sec);
+    font-size: 1.2rem;
+    transition: all 0.25s ease;
+}
+
+.projects .addProjectBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+.projects .addProjectBtn:hover .btnIcon {
+    background: var(--text-color-prim);
+    color: var(--background-color-prim);
+}
+
+.projects .addProjectBtn:hover .btnText {
+    color: var(--text-color-prim);
+}
+
+.projects .tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.projects .tableBody .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: all 0.22s ease;
+}
+
+.projects .tableBody .row:hover {
+  background: var(--background-color-sec);
+}
+
+.projects .tableBody .row span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-prim);
+}
+
+.projects .tableBody .row .postData {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects .tableBody .row .postData span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.projects .tableBody .row .postData span .rowIcon {
+  color: var(--section-value);
+  font-size: .9rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.projects .tableBody .row .actions {
+  display: flex;
+  gap: 5px;
+}
+
+.projects .tableBody .row .actions button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.projects .tableBody .row .actions button:nth-child(1) {
+  background: #1e90ff;
+  color: white;
+}
+
+.projects .tableBody .row .actions button:nth-child(2) {
+  background: #f0ad4e;
+  color: white;
+}
+
+.projects .tableBody .row .actions button:nth-child(3) {
+  background: #e74c3c;
+  color: white;
+}
+
+.projects .pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.projects .pagination button {
+  padding: 6px 12px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.projects .pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #1e90ff !important;
+}
+
+/* projects */
+
+/* users */
+
+.users {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.users .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.users .tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.users .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: all 0.22s ease;
+}
+
+.users .row:hover {
+  background: var(--background-color-sec);
+}
+
+.users .tableBody .row span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-prim);
+}
+
+.users .tableBody .row .userData {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.users .tableBody .row .userData span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.users .actions button {
+  background: #e74c3c;
+  color: white;
+}
+
+.users .actions button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.users .pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.users .pagination button {
+  padding: 6px 12px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.users .pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #1e90ff !important;
+}
+
+/* users */
+
+/* subscribers */
+
+.subscribers {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribers .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.subscribers .tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subscribers .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: all 0.22s ease;
+}
+
+.subscribers .row:hover {
+  background: var(--background-color-sec);
+}
+
+.subscribers .tableBody .row span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-prim);
+}
+
+.subscribers .tableBody .row .userData {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribers .tableBody .row .userData span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.subscribers .actions button {
+  background: #e74c3c;
+  color: white;
+}
+
+.subscribers .actions button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.subscribers .pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.subscribers .pagination button {
+  padding: 6px 12px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.subscribers .pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #1e90ff !important;
+}
+
+/* subscribers */
+
+/* testimonials */
+
+.testimonials {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonials .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.testimonials .testimonialsManagement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonials .testimonialsManagement .tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow:hover {
+  background: var(--background-color-sec);
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialProfile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialInfo .top {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialInfo .top .name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-prim);
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialInfo .top .job {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--section-value);
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialInfo .middle {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  flex-wrap: wrap;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .testimonialInfo .message {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-prim);
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .actions button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .actions button:nth-child(1) {
+  background: #1e90ff;
+  color: white;
+}
+
+.testimonials .testimonialsManagement .tableBody .testimonialRow .actions button:nth-child(2) {
+  background: #e74c3c;
+  color: white;
+}
+
+.testimonials .pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.testimonials .pagination button {
+  padding: 6px 12px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.testimonials .pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #1e90ff !important;
+}
+
+/* testimonials */
+
+/* media query */
+
+@media (max-width: 1250px) {}
+
+@media (max-width: 650px) {
+
+  /* stat */
+  .statusData .status {
+    grid-template-columns: 1fr;
+  }
+
+  /* stat */
+
+  /* articles */
+  .articles .tableBody .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* articles */
+
+  /* projects */
+  .projects .tableBody .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* projects */
+
+  /* users */
+  .users .tableBody .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* users */
+
+  /* subscribers */
+  .subscribers .tableBody .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* subscribers */
+
+  /* testimonails */
+  .testimonials .testimonialsManagement .tableBody .testimonialRow {
+    flex-direction: column;
+  }
+
+  /* testimonails */
+}
+
+@media (max-width: 450px) {}
+
+/* media query */

@@ -1,0 +1,462 @@
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero .commentTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.hero .title {
+    font-size: 50px;
+    line-height: 1.5em;
+    font-weight: 700;
+    text-transform: capitalize;
+    max-width: 850px;
+    color: var(--text-color-prim);
+}
+
+.hero .subTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    text-transform: capitalize;
+    max-width: 450px;
+    color: var(--text-color-sec);
+}
+
+/* hero */
+
+/* profile */
+
+.profile {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile .commentTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.profile .profileBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile .imageProfile {
+    width: 100%;
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.profile .socialMedia {
+    max-width: 300px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 1px solid var(--border-color);
+}
+
+.profile .followLabel {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-sec);
+}
+
+.profile .socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile .socialLinks a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-sec);
+    transition: color 0.25s ease;
+}
+
+.profile .socialLinks a:hover {
+    color: var(--text-color-prim);
+}
+
+.profile .aboutBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile .aboutBox .text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    max-width: 850px;
+    color: var(--text-color-sec);
+    text-transform: none;
+}
+
+/* profile */
+
+/* experience */
+
+.experience {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience .commentTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.experience .experienceItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience .experienceItem .role {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+}
+
+.experience .experienceItem .metaRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.experience .experienceItem .metaRow .company {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    text-transform: capitalize;
+    color: var(--section-value);
+}
+
+.sep {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--section-value);
+}
+
+.experience .experienceItem .metaRow .period {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--section-value);
+}
+
+.description {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    max-width: 850px;
+    color: var(--text-color-sec);
+    text-transform: none;
+}
+
+/* experience */
+
+/* education */
+
+.education {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education .commentTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.education .educationList {
+    display: flex;
+    flex-direction: column;
+}
+
+.education .educationList .educationItem {
+    padding: 12px 10px;
+    cursor: pointer;
+    border-top: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+}
+
+.education .educationList .educationItem:last-child {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.education .educationList .educationItem .topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.education .educationList .educationItem .topRow .degree {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+}
+
+.education .educationList .educationItem .topRow .period {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--section-value);
+}
+
+.education .educationList .educationItem .hiddenContent {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: all 0.5s ease;
+}
+
+.education .educationList .educationItem.open .hiddenContent {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.education .educationList .educationItem .hiddenContent .institution {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    text-transform: capitalize;
+    color: var(--section-value);
+}
+
+.education .educationList .educationItem .hiddenContent .description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    max-width: 850px;
+    color: var(--text-color-sec);
+    text-transform: none;
+}
+
+/* education */
+
+/* skills */
+
+.skills {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills .commentTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.skills .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.skills .skillsGrid .skillCard .skillLabel {
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+    margin-bottom: 10px;
+}
+
+.skills .skillsGrid .skillCard .skillList {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills .skillsGrid .skillCard .skillList .skillItem {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-sec);
+}
+
+/* skills */
+
+/* stack */
+
+.stack {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stack .commentTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.stack .stackGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stack .stackGrid .stackItem {
+    position: relative;
+    border: 1px solid var(--border-color);
+    padding: 50px 20px 20px;
+    border-radius: 2px;
+    transition: 0.25s ease;
+}
+
+.stack .stackGrid .stackItem .stackName {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+}
+
+.stack .stackGrid .stackItem .stackIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack .stackGrid .stackItem .stackIconWrapper .stackIcon {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+.stack .stackGrid .stackItem .stackIconWrapper .noIcon {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    color: var(--text-color-sec);
+}
+
+/* stack */
+
+/* media query */
+
+@media (max-width: 1450px) {
+
+    /* skills */
+    .skills .skillsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* skills */
+}
+
+@media (max-width: 1250px) {
+
+    /* hero */
+    .hero .title {
+        font-size: 40px;
+    }
+
+    /* hero */
+
+    /* stack */
+    .stack .stackGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* stack */
+}
+
+@media (max-width: 650px) {
+
+    /* hero */
+    .hero .title {
+        font-size: 30px;
+    }
+
+    /* hero */
+
+    /* skills */
+    .skills .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* skills */
+
+    /* stack */
+    .stack .stackGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* stack */
+}
+
+@media (max-width: 450px) {
+
+    /* hero */
+    .hero .title {
+        font-size: 20px;
+    }
+
+    /* hero */
+    /* stack */
+    .stack .stackGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* stack */
+}
+
+/* media query */

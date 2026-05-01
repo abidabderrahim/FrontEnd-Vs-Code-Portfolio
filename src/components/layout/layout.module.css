@@ -1,0 +1,1113 @@
+/* layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: var(--font-prim);
+}
+
+/* topbar */
+.layout .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  background: var(--background-color-sec);
+  border-bottom: 1px solid var(--border-color);
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.layout .topBar .topleftBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.layout .topBar .topleftBar .toggleSidebarBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-color-sec);
+  cursor: pointer;
+  transition: 0.3s ease;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: 1px solid var(--border-color);
+}
+
+.layout .topBar .topleftBar .toggleSidebarBtn:hover {
+  color: var(--text-color-prim);
+}
+
+.layout .topBar .topleftBar .toggleSidebarBtn .toggleIcon {
+  font-size: 1.5rem;
+}
+
+.layout .topBar .topleftBar .welcomeMessage {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-right: 1px solid var(--border-color);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.layout .topBar .topleftBar .welcomeMessage .welcome {
+  font-weight: 500;
+  font-size: 00.9rem;
+  color: var(--text-color-sec);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.layout .topBar .toprightBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  border-left: 1px solid var(--border-color);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.layout .topBar .toprightBar .status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  border-radius: 2px;
+  background-color: var(--background-color-status);
+}
+
+.layout .topBar .toprightBar .status .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--status-color);
+  position: relative;
+}
+
+.layout .topBar .toprightBar .status .dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--status-color);
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+  animation: pulse-border 1.6s ease-out infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
+.layout .topBar .toprightBar .status .text {
+  font-size: 00.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--status-color);
+  white-space: nowrap;
+}
+
+/* topbar */
+
+/* content */
+
+.layout .content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* side left */
+
+.layout .content .sidebarLeft {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: var(--background-color-sec);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.layout .content .sidebarLeft .profile {
+  height: 100%;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout .content .sidebarLeft .profile .avatar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout .content .sidebarLeft .profile .avatar .imageProfile {
+  display: block;
+  width: 85px;
+  height: 85px;
+  object-position: left center;
+  object-fit: cover;
+  image-rendering: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+}
+
+.layout .content .sidebarLeft .profile .avatar .name {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock {
+  margin-bottom: 20px;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  margin-bottom: 15px;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoTitle .infoIcon {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoList li {
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoList li a {
+  position: relative;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  padding-bottom: 4px;
+  display: inline-block;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoList li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-color-sec);
+  transition: width 0.5s ease;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .infoBlock .infoList li a:hover::after {
+  width: 100%;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .resumeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .resumeBtn .resumeText {
+  padding: 0 16px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  background: transparent;
+  transition: color 0.25s ease;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .resumeBtn .resumeIcon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--border-color);
+  color: var(--text-color-sec);
+  font-size: 1.2rem;
+  transition: all 0.25s ease;
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .resumeBtn:hover {
+  border-color: var(--text-color-prim);
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .resumeBtn:hover .resumeIcon {
+  background: var(--text-color-prim);
+  color: var(--background-color-prim);
+}
+
+.layout .content .sidebarLeft .profile .profileInfo .resumeBtn:hover .resumeText {
+  color: var(--text-color-prim);
+}
+
+.layout .content .sidebarLeft .workwithMe {
+  width: 100%;
+  padding: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.layout .content .sidebarLeft .workwithMe .contactMe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  transition: all 0.25s ease;
+}
+
+.layout .content .sidebarLeft .workwithMe .contactMe .icon {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  transition: all 0.25s ease;
+}
+
+.layout .content .sidebarLeft .workwithMe .contactMe:hover {
+  color: var(--text-color-prim);
+}
+
+.layout .content .sidebarLeft .workwithMe .contactMe:hover .icon {
+  color: var(--text-color-prim);
+}
+
+.layout .content .contentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* side left */
+
+/* content wrapper */
+
+.layout .content .contentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.layout .content .contentWrapper .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  background: var(--background-color-sec);
+  border-bottom: 1px solid var(--border-color);
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.layout .content .contentWrapper .nav .sep {
+  display: none;
+}
+
+.layout .content .contentWrapper .nav .navLinks {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+}
+
+.layout .content .contentWrapper .nav .navLinks .navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border-color);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.layout .content .contentWrapper .nav .listLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px;
+  text-decoration: none;
+  color: var(--text-color-sec);
+  font-weight: 500;
+  font-size: 00.9rem;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.layout .content .contentWrapper .nav .listLink:hover,
+.layout .content .contentWrapper .nav .listLink.active {
+  background-color: var(--background-color-prim);
+  color: var(--text-color-prim);
+}
+
+.layout .content .contentWrapper .nav .navRight {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+}
+
+.layout .content .contentWrapper .nav .navRight .buttons {
+  display: flex;
+  align-items: stretch;
+  border-left: 1px solid var(--border-color);
+}
+
+.layout .content .contentWrapper .nav .navRight .buttons .login {
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  padding: 0 16px;
+  background: var(--background-color-sec);
+  font-weight: 500;
+  font-size: 00.9rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.layout .content .contentWrapper .nav .navRight .buttons .login:hover {
+  background-color: var(--background-color-prim);
+  color: var(--text-color-prim);
+}
+
+.layout .content .contentWrapper .nav .navRight .buttons .theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  padding: 0 16px;
+  background: var(--background-color-sec);
+  border: none;
+  font-weight: 500;
+  font-size: 00.9rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.layout .content .contentWrapper .nav .navRight .buttons .theme:hover {
+  background-color: var(--background-color-prim);
+  color: var(--text-color-prim);
+}
+
+.layout .content .contentWrapper .nav .navRight .theme .icon {
+  font-size: 1.5rem;
+  line-height: 0.3em;
+}
+
+.layout .content .contentWrapper .nav .navRight .toggleNavBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.layout .content .contentWrapper .nav .navRight .toggleNavBtn .menuHamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 16px;
+}
+
+.layout .content .contentWrapper .nav .navRight .toggleNavBtn .menuHamburger span {
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-color-sec);
+  border-radius: 2px;
+  transition: 0.2s ease;
+}
+
+.layout .content .contentWrapper .nav .navRight .toggleNavBtn:hover .menuHamburger span {
+  background-color: var(--text-color-prim);
+}
+
+/* navbar */
+
+/* bar content wrapper */
+
+.layout .content .contentWrapper .barcontentWrapper {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* side line number */
+
+.layout .content .contentWrapper .barcontentWrapper .sidelinesBar {
+  width: 45px;
+  background: var(--background-color-prim);
+  border-right: 1px solid var(--border-color);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  gap: 5px;
+}
+
+.layout .content .contentWrapper .barcontentWrapper .sidelinesBar .lineNumber {
+  height: 20px;
+  text-align: center;
+  color: var(--text-color-sec);
+  font-size: 12px;
+}
+
+/* side line number */
+
+/* main contant  */
+
+.layout .content .contentWrapper .barcontentWrapper .mainContentWrapper {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.layout .content .contentWrapper .barcontentWrapper .mainContentWrapper .mainContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: var(--background-color-prim);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.layout .content .contentWrapper .barcontentWrapper .mainContentWrapper .mainContent::-webkit-scrollbar {
+  display: none;
+}
+
+/* main content */
+
+/* side right */
+
+.layout .content .contentWrapper .barcontentWrapper .sidebarRight {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid var(--border-color);
+  padding: 20px;
+  background: var(--background-color-sec);
+  overflow-y: auto;
+  display: block;
+}
+
+.layout .content .contentWrapper .barcontentWrapper .sidebarRight .indexTitle {
+  font-size: 1rem;
+  line-height: 1.3em;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  border-bottom: 1px solid var(--text-color-sec);
+  max-width: max-content;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.layout .content .contentWrapper .barcontentWrapper .sidebarRight .indexLink {
+  display: block;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  font-family: var(--font-prim);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: var(--background-color-sec);
+  color: var(--text-color-sec);
+  width: max-content;
+  transition: color 0.5s ease;
+}
+
+.layout .content .contentWrapper .barcontentWrapper .sidebarRight .indexLink:hover {
+  color: var(--text-color-prim);
+}
+
+/* side right */
+
+/* bar content wrapper */
+
+/* content wrapper */
+
+/* content */
+
+/* footerbar */
+
+.layout .footerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid var(--border-color);
+  padding: 5px 10px;
+  background: var(--background-color-sec);
+}
+
+.layout .footerBar .location .myLocation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 00.9rem;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+}
+
+.layout .footerBar .location .myLocation .sep {
+  background-color: var(--background-color-sep);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.layout .footerBar .mediaLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.layout .footerBar .mediaLinks a {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  transition: all 0.2s ease;
+}
+
+.layout .footerBar .mediaLinks a:hover {
+  color: var(--text-color-prim);
+}
+
+/* footerbar */
+
+/* side bar menu */
+
+.sidebarLeftmenu {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+  background: var(--background-color-sec);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+  z-index: 300;
+}
+
+.openMenu {
+  left: 0;
+}
+
+.sidebarLeftmenu .close {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebarLeftmenu .close .closeMenu {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border-color);
+  color: var(--text-color-sec);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sidebarLeftmenu .close .closeMenu .icon {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+}
+
+.sidebarLeftmenu .profile {
+  height: 100%;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebarLeftmenu .profile .avatar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebarLeftmenu .profile .avatar .imageProfile {
+  display: block;
+  width: 85px;
+  height: 85px;
+  object-position: left center;
+  object-fit: cover;
+  image-rendering: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+}
+
+.sidebarLeftmenu .profile .avatar .name {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock {
+  margin-bottom: 20px;
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  margin-bottom: 15px;
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoTitle .infoIcon {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoList li {
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoList li a {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  padding-bottom: 4px;
+  display: inline-block;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoList li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-color-sec);
+  transition: width 0.5s ease;
+}
+
+.sidebarLeftmenu .profile .profileInfo .infoBlock .infoList li a:hover::after {
+  width: 100%;
+}
+
+.sidebarLeftmenu .profile .profileInfo .resumeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.sidebarLeftmenu .profile .profileInfo .resumeBtn .resumeText {
+  padding: 0 16px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  background: transparent;
+  transition: color 0.25s ease;
+}
+
+.sidebarLeftmenu .profile .profileInfo .resumeBtn .resumeIcon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--border-color);
+  color: var(--text-color-sec);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.sidebarLeftmenu .profile .profileInfo .resumeBtn:hover {
+  border-color: var(--text-color-prim);
+}
+
+.sidebarLeftmenu .profile .profileInfo .resumeBtn:hover .resumeIcon {
+  background: var(--text-color-prim);
+  color: var(--background-color-prim);
+}
+
+.sidebarLeftmenu .profile .profileInfo .resumeBtn:hover .resumeText {
+  color: var(--text-color-prim);
+}
+
+.sidebarLeftmenu .workwithMe {
+  width: 100%;
+  padding: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.sidebarLeftmenu .workwithMe .contactMe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  transition: all 0.25s ease;
+}
+
+.sidebarLeftmenu .workwithMe .contactMe .icon {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  transition: all 0.25s ease;
+}
+
+.sidebarLeftmenu .workwithMe .contactMe:hover {
+  color: var(--text-color-prim);
+}
+
+.sidebarLeftmenu .workwithMe .contactMe:hover .icon {
+  color: var(--text-color-prim);
+}
+
+/* side bar menu */
+
+/* nav menu */
+
+.navMenu {
+  position: fixed;
+  top: 0;
+  right: -220px;
+  width: 100%;
+  max-width: 200px;
+  height: 100vh;
+  background: var(--background-color-sec);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.3s ease;
+  z-index: 300;
+}
+
+.navMenu.mobileOpen {
+  right: 0;
+}
+
+.navMenu .close {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navMenu .close .closeMenu {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--border-color);
+  color: var(--text-color-sec);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.navMenu .close .closeMenu .icon {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+}
+
+.navMenu .navLinks {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.navMenu .navLinks .listLink {
+  position: relative;
+  color: var(--text-color-sec);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding-bottom: 4px;
+  transition: 0.2s ease;
+}
+
+.navMenu .navLinks .listLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-color-prim);
+  transition: 0.2s ease;
+}
+
+.navMenu .navLinks .listLink:hover::after {
+  width: 100%;
+}
+
+.navMenu .navLinks .listLink:hover {
+  color: var(--text-color-prim);
+}
+
+.navMenu .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.navMenu .buttons .login {
+  border-right: 1px solid var(--border-color);
+}
+
+.navMenu .buttons .login,
+.navMenu .buttons .theme {
+  background: var(--background-color-sec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 00.9rem;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+  transition: all 0.2s ease;
+}
+
+.navMenu .buttons .theme .icon {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navMenu .buttons .login:hover,
+.navMenu .buttons .theme:hover {
+  background-color: var(--background-color-prim);
+  color: var(--text-color-prim);
+}
+
+/* nav menu */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 200;
+}
+
+/* layout */
+
+/* media query */
+
+@media (max-width: 1250px) {
+
+  /* topbar */
+  .layout .topBar .topleftBar .toggleSidebarBtn {
+    display: block;
+  }
+
+  .layout .topBar .toprightBar .status {
+    padding: 8px;
+  }
+
+  .layout .topBar .toprightBar .status .text {
+    display: none;
+  }
+
+  .layout .topBar .topleftBar .toggleSidebarBtn {
+    display: flex;
+  }
+
+  /* topbar */
+
+  /* side left */
+  .layout .content .sidebarLeft {
+    display: none;
+  }
+
+  /* side left */
+
+  /* side bar right */
+  .layout .content .contentWrapper .barcontentWrapper .sidebarRight {
+    display: none;
+  }
+
+  /* side bar right */
+}
+
+@media (max-width: 650px) {
+
+  /* navbar */
+  .layout .content .contentWrapper .nav .navLinks {
+    display: none;
+  }
+
+  .layout .content .contentWrapper .nav .sep {
+    display: block;
+  }
+
+  .layout .content .contentWrapper .nav .navRight .buttons {
+    display: none;
+  }
+
+  .layout .content .contentWrapper .nav .navRight .toggleNavBtn {
+    display: flex;
+  }
+
+  /* navbar */
+
+  /* location */
+  .layout .footerBar .location .myLocation {
+    display: none;
+  }
+
+  /* location */
+}
+
+@media (max-width: 450px) {
+
+  /* topbar */
+  .layout .topBar .topleftBar .welcomeMessage {
+    display: none;
+  }
+
+  /* topbar */
+}
+
+/* media query */

@@ -1,0 +1,170 @@
+/* Register Modal */
+
+.RegisterModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.RegisterModal .modal {
+  background-color: var(--background-color-prim);
+  width: 100%;
+  max-width: 450px;
+  border-radius: 2px;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+.RegisterModal .modal.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.RegisterModal .modal .modalContent {
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header */
+
+.RegisterModal .modal .modalContent .headerRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.RegisterModal .modal .modalContent .headerRegister .title {
+  font-family: var(--font-prim);
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+}
+
+.RegisterModal .modal .modalContent .headerRegister .subtitle {
+  font-family: var(--font-prim);
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+}
+
+/* Form Inputs */
+
+.RegisterModal .modal .modalContent .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs */
+
+.RegisterModal .modal .modalContent .form .input {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: var(--font-prim);
+  font-size: .9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  outline: none;
+  color: var(--text-color-prim);
+  background-color: var(--background-color);
+}
+
+.RegisterModal .modal .modalContent .form .input:focus {
+    border-color: var(--section-value);
+}
+
+/* Buttons */
+
+.RegisterModal .modal .modalContent .form .submitBtn {
+  padding: 12px 0px;
+  color: var(--text-color-prim);
+  font-family: var(--font-prim);
+  background-color: var(--background-color-prim);
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.RegisterModal .modal .modalContent .form .submitBtn:hover {
+  border-color: var(--text-color-prim);
+}
+
+.RegisterModal .modal .modalContent .switchText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: var(--font-prim);
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-sec);
+}
+
+.RegisterModal .modal .modalContent .switchLink {
+  font-family: var(--font-prim);
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.RegisterModal .modal .modalContent .googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  background-color: var(--background-color);
+  color: var(--text-color-prim);
+  font-family: var(--font-prim);
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.RegisterModal .modal .modalContent .googleBtn img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Error Message */
+
+.RegisterModal .modal .modalContent .messageError {
+  font-family: var(--font-prim);
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--section-value);
+}

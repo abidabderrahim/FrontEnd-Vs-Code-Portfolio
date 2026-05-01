@@ -1,0 +1,406 @@
+/* Post Modal */
+
+.projectModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.projectModal .modal {
+    background-color: var(--background-color-prim);
+    width: 100%;
+    max-width: 850px;
+    border-radius: 2px;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+}
+
+.projectModal .modal.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.projectModal .modal .modalContent {
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projectModal .modal .modalContent::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Header */
+
+.projectModal .modal .modalContent .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectModal .modal .modalContent .header .title {
+    font-family: var(--font-prim);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+}
+
+.projectModal .modal .modalContent .header .closeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    font-family: var(--font-prim);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.projectModal .modal .modalContent .header .closeBtn:hover {
+    border-color: var(--text-color-prim);
+    color: var(--text-color-prim);
+}
+
+/* Form Inputs */
+
+.projectModal .modal .modalContent .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Upload Container */
+
+.projectModal .modal .modalContent .form .uploadContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projectModal .modal .modalContent .form .uploadContainer .uploadCI {
+    font-size: 64px;
+    color: var(--border-color);
+}
+
+.projectModal .modal .modalContent .form .uploadContainer .uploadInput {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.projectModal .modal .modalContent .form .uploadContainer .uploadedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Inputs */
+
+.projectModal .modal .modalContent .form .titleInput,
+.projectModal .modal .modalContent .form .descInput,
+.projectModal .modal .modalContent .form .categoryInput,
+.projectModal .modal .modalContent .form .tagInput,
+.projectModal .modal .modalContent .form .projectLink {
+    width: 100%;
+    padding: 14px 18px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+    color: var(--text-color-prim);
+    background-color: var(--background-color);
+    transition: 0.2s;
+}
+
+.projectModal .modal .modalContent .form .titleInput:focus,
+.projectModal .modal .modalContent .form .descInput:focus,
+.projectModal .modal .modalContent .form .categoryInput:focus,
+.projectModal .modal .modalContent .form .tagInput:focus,
+.projectModal .modal .modalContent .form .projectLink:focus {
+    border-color: var(--section-value);
+}
+
+.projectModal .modal .modalContent .form .descInput {
+    min-height: 120px;
+    resize: none;
+}
+
+/* Custom Select */
+
+.projectModal .modal .modalContent .form .newCategory {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectModal .modal .modalContent .form .newCategory .addCategoryBtn {
+    font-family: var(--font-prim);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--text-color-prim);
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    padding: 14px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.projectModal .modal .modalContent .form .newCategory .addCategoryBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+.projectModal .modal .modalContent .form .customSelect {
+    position: relative;
+    width: 100%;
+    font-family: var(--font-prim);
+}
+
+.projectModal .modal .modalContent .form .customSelect .selected {
+    background-color: var(--background-color-prim);
+    padding: 12px 16px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    color: var(--text-color-sec);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.projectModal .modal .modalContent .form .customSelect .selected i {
+    font-family: var(--font-prim);
+    font-size: 22px;
+    color: var(--text-color-sec);
+}
+
+.projectModal .modal .modalContent .form .customSelect .options {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+    max-height: 180px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    color: var(--text-color-prim);
+    overflow-y: auto;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.2s;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projectModal .modal .modalContent .form .customSelect.open .options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.projectModal .modal .modalContent .form .customSelect .option {
+    padding: 12px 16px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    color: var(--text-color-sec);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.projectModal .modal .modalContent .form .customSelect .option:hover,
+.projectModal .modal .modalContent .form .customSelect .option.active {
+    color: var(--text-color-prim);
+}
+
+.projectModal .modal .modalContent .form .customSelect .options::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.projectModal .modal .modalContent .form .customSelect .options::-webkit-scrollbar-thumb {
+    background-color: var(--button-bg);
+    border-radius: 3px;
+}
+
+/* stacks */
+
+.projectModal .modal .modalContent .form .techStack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projectModal .modal .modalContent .form .techStack .addStack {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectModal .modal .modalContent .form .techStack .addStack .toolInput {
+    width: 100%;
+    padding: 14px 18px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+    color: var(--text-color-prim);
+    background-color: var(--background-color-prim);
+}
+
+.projectModal .modal .modalContent .form .techStack .addStack .addTool {
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-prim);
+    cursor: pointer;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    padding: 14px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.projectModal .modal .modalContent .form .techStack .addStack .addTool:hover {
+    border-color: var(--text-color-prim);
+}
+
+.projectModal .modal .modalContent .form .techStack .tools {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.projectModal .modal .modalContent .form .techStack .tools .tool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 12px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+    border: 1px solid var(--text-color-prim);
+    border-radius: 2px;
+}
+
+.projectModal .modal .modalContent .form .techStack .tools .tool .removeTool {
+    width: 25px;
+    height: 25px;
+    color: var(--text-color-prim);
+    background-color: var(--background-color-prim);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Buttons */
+
+.projectModal .modal .modalContent .form .converttohtmlBtn {
+    padding: 14px 0px;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    color: var(--text-color-prim);
+    font-family: var(--font-prim);
+    font-weight: 500;
+    font-size: .9rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.projectModal .modal .modalContent .form .submitBtn {
+    padding: 14px 0px;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    color: var(--text-color-prim);
+    font-family: var(--font-prim);
+    font-weight: 500;
+    font-size: .9rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.projectModal .modal .modalContent .form .converttohtmlBtn:hover,
+.projectModal .modal .modalContent .form .submitBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+/* Error Message */
+
+.projectModal .modal .modalContent .messageError {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--section-value);
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+    z-index: 999;
+}

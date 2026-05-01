@@ -1,0 +1,92 @@
+/* root */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --background-color-prim: rgb(31, 31, 31);
+  --background-color-sec: rgb(24, 24, 24);
+  --background-color-sep: rgb(157, 157, 157);
+  --background-color-tree: rgb(251, 251, 254);
+  --text-color-prim: rgb(251, 251, 254);
+  --text-color-sec: rgb(157, 157, 157);
+  --border-color: rgb(43, 43, 43);
+  --background-color-status: rgba(90, 238, 108, 0.1);
+  --status-color: rgb(90, 238, 108);
+  --comment-title: rgb(106, 153, 85);
+  --section-value: rgb(206, 145, 120);
+  --font-prim: "IBM Plex Mono", monospace;
+}
+
+/* root */
+
+/* default values */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-prim);
+  user-select: none;
+}
+
+/* theme light */
+
+body.light {
+  --background-color-prim: rgb(252, 252, 253);
+  --background-color-sec: rgb(245, 245, 245);
+  --background-color-sep: rgb(200, 200, 200);
+  --background-color-tree: rgb(240, 240, 240);
+  --text-color-prim: rgb(40, 40, 40);
+  --text-color-sec: rgb(100, 100, 115);
+  --border-color: rgb(220, 220, 220);
+  --background-color-status: rgba(0, 236, 28, 0.164);
+  --status-color: rgb(68, 177, 81);
+  --comment-title: rgb(106, 153, 85);
+  --section-value: rgb(206, 145, 120);
+  --font-prim: "IBM Plex Mono", monospace;
+}
+
+/* theme light */
+
+/* default values */

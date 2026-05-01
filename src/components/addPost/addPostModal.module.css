@@ -1,0 +1,322 @@
+/* Post Modal */
+
+.postModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.postModal .modal {
+    background-color: var(--background-color-prim);
+    width: 100%;
+    max-width: 850px;
+    border-radius: 2px;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+}
+
+.postModal .modal.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.postModal .modal .modalContent {
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.postModal .modal .modalContent::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Header */
+
+.postModal .modal .modalContent .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postModal .modal .modalContent .header .title {
+    font-family: var(--font-prim);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+}
+
+.postModal .modal .modalContent .header .closeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    font-family: var(--font-prim);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.postModal .modal .modalContent .header .closeBtn:hover {
+    border-color: var(--text-color-prim);
+    color: var(--text-color-prim);
+}
+
+/* Form Inputs */
+
+.postModal .modal .modalContent .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Upload Container */
+
+.postModal .modal .modalContent .form .uploadContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.postModal .modal .modalContent .form .uploadContainer .uploadCI {
+    font-size: 64px;
+    color: var(--border-color);
+}
+
+.postModal .modal .modalContent .form .uploadContainer .uploadInput {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.postModal .modal .modalContent .form .uploadContainer .uploadedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Inputs */
+
+.postModal .modal .modalContent .form .titleInput,
+.postModal .modal .modalContent .form .descInput,
+.postModal .modal .modalContent .form .categoryInput,
+.postModal .modal .modalContent .form .tagInput {
+    width: 100%;
+    padding: 14px 18px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+    color: var(--text-color-prim);
+    background-color: var(--background-color);
+    transition: 0.2s;
+}
+
+.postModal .modal .modalContent .form .titleInput:focus,
+.postModal .modal .modalContent .form .descInput:focus,
+.postModal .modal .modalContent .form .categoryInput:focus,
+.postModal .modal .modalContent .form .tagInput:focus {
+    border-color: var(--section-value);
+}
+
+.postModal .modal .modalContent .form .descInput {
+    min-height: 120px;
+    resize: none;
+}
+
+/* Custom Select */
+
+.postModal .modal .modalContent .form .newCategory {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.postModal .modal .modalContent .form .newCategory .addCategoryBtn {
+    font-family: var(--font-prim);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--text-color-prim);
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    padding: 14px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.postModal .modal .modalContent .form .newCategory .addCategoryBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+.postModal .modal .modalContent .form .customSelect {
+    position: relative;
+    width: 100%;
+    font-family: var(--font-prim);
+}
+
+.postModal .modal .modalContent .form .customSelect .selected {
+    background-color: var(--background-color-prim);
+    padding: 12px 16px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    color: var(--text-color-sec);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.postModal .modal .modalContent .form .customSelect .selected i {
+    font-family: var(--font-prim);
+    font-size: 22px;
+    color: var(--text-color-sec);
+}
+
+.postModal .modal .modalContent .form .customSelect .options {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+    max-height: 180px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    color: var(--text-color-prim);
+    overflow-y: auto;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.2s;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.postModal .modal .modalContent .form .customSelect.open .options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.postModal .modal .modalContent .form .customSelect .option {
+    padding: 12px 16px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    color: var(--text-color-sec);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.postModal .modal .modalContent .form .customSelect .option:hover,
+.postModal .modal .modalContent .form .customSelect .option.active {
+    color: var(--text-color-prim);
+}
+
+.postModal .modal .modalContent .form .customSelect .options::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.postModal .modal .modalContent .form .customSelect .options::-webkit-scrollbar-thumb {
+    background-color: var(--button-bg);
+    border-radius: 3px;
+}
+
+/* Buttons */
+
+.postModal .modal .modalContent .form .converttohtmlBtn {
+    padding: 14px 0px;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    color: var(--text-color-prim);
+    font-family: var(--font-prim);
+    font-weight: 500;
+    font-size: .9rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.postModal .modal .modalContent .form .submitBtn {
+    padding: 14px 0px;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    color: var(--text-color-prim);
+    font-family: var(--font-prim);
+    font-weight: 500;
+    font-size: .9rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.postModal .modal .modalContent .form .converttohtmlBtn:hover,
+.postModal .modal .modalContent .form .submitBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+/* Error Message */
+
+.postModal .modal .modalContent .messageError {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--section-value);
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-family: var(--font-prim);
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--text-color-prim);
+    z-index: 999;
+}

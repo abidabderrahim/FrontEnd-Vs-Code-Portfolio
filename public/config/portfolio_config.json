@@ -1,0 +1,1442 @@
+{
+  "portfolio_config": {
+    "layout": {
+      "topbar": {
+        "message": "welcome to my space!",
+        "status": "Available for new opportunities"
+      },
+      "leftbar": {
+        "profile": {
+          "name": "Abderrahim Abid.",
+          "image": "/images/profile.webp"
+        },
+        "job": [
+          "Full-Stack Developer",
+          "UI-UX Designer"
+        ],
+        "experience": [
+          "+2 years UI-UX Designer",
+          "+2 years Front End Developer",
+          "+1 years Full Stack Developer"
+        ],
+        "languages": [
+          "Arabic",
+          "English",
+          "Frensh"
+        ],
+        "contact": {
+          "email": "email@example.com",
+          "phone": "+212600000000"
+        },
+        "resumeLink": "http://localhost:5173/resume/Abid_Abderrahim_Resume.pdf"
+      },
+      "footerbar": {
+        "location": "Rabat Morocco 34.0209° N - 6.8416° W",
+        "links": {
+          "instagram": "https://www.instagram.com/",
+          "linkedin": "https://www.linkedin.com/",
+          "twitter": "https://twitter.com/",
+          "github": "https://www.github.com/"
+        }
+      }
+    },
+    "about": {
+      "title": "Abderrahim Abid Full Stack Developer & UI UX Designer.",
+      "subtitle": "I build clean digital experiences, smart tools, and scalable solutions for businesses.",
+      "profile": {
+        "image": "/images/profile.webp",
+        "myName": "Abid Abderrahim",
+        "links": {
+          "instagram": "https://www.instagram.com/",
+          "linkedin": "https://www.linkedin.com/",
+          "twitter": "https://twitter.com/",
+          "github": "https://www.github.com/"
+        },
+        "aboutMe": "I’m a full stack developer and UI UX designer who loves solving real problems using clean design and efficient code. I create digital products that feel intuitive, look professional, and work smoothly across all devices. My goal is always the same: build solutions that save time, reduce complexity, and help businesses grow faster.",
+        "myWork": "I have experience building websites, mobile apps, automation tools, dashboards, and custom scripts. From early stage ideas to full systems, I help translate concepts into polished, functional products. I focus on performance, simplicity, and modern UX so every project is both beautiful and scalable.",
+        "whatIdo": "I help clients turn their goals into real, working solutions fast and professionally. Whether it’s a full website, a mobile app, an automation tool, or UX improvements, I deliver work that is clear, organized, and built for long term success. I don’t just build things; I help clients streamline their workflow, improve user experience, and create digital products that stand out."
+      },
+      "experience": {
+        "items": [
+          {
+            "role": "Full Stack Developer & UI UX Designer",
+            "company": "Freelance",
+            "period": "2021 - Present",
+            "description": "Designed and developed full stack web applications, mobile interfaces, automation tools, and dashboards for clients across different industries. Delivered modern UI UX, clean code, and scalable digital solutions that help businesses work faster and more efficiently."
+          },
+          {
+            "role": "Frontend Developer",
+            "company": "Startup Projects & Collaborations",
+            "period": "2020 - 2023",
+            "description": "Built responsive, high performance front end interfaces using modern frameworks. Improved user flows, optimized page speed, and helped teams translate concepts into functional components with consistent design systems."
+          },
+          {
+            "role": "Automation & Tools Developer",
+            "company": "Independent Projects",
+            "period": "2019 - Present",
+            "description": "Created automation scripts, data processing tools, and workflow systems using Python, Bash, Perl, and Ruby. Helped clients save hours of manual work by building custom solutions for scraping, formatting, monitoring, and task automation."
+          }
+        ]
+      },
+      "education": {
+        "items": [
+          {
+            "degree": "Bachelor’s Studies in Computer Science",
+            "institution": "University",
+            "period": "2019 - Present",
+            "description": "Focused on software development, algorithms, data structures, and system design. Gained strong foundations in programming, problem solving, and building efficient digital products."
+          },
+          {
+            "degree": "Full Stack Web Development & UI UX designer",
+            "institution": "Online Certifications",
+            "period": "2020 - 2022",
+            "description": "Completed advanced courses in front end and back end development, including React, Node.js, API design, databases, and UI UX fundamentals."
+          },
+          {
+            "degree": "Software & Productivity Tools Mastery",
+            "institution": "Self-Learning & Professional Training",
+            "period": "2018 - Present",
+            "description": "Developed expertise in Python, Bash, Ruby, Perl scripting, automation, UI UX design tools, version control, cloud platforms, and modern development practices through hands on projects and continuous learning."
+          }
+        ]
+      },
+      "skills": {
+        "categories": [
+          {
+            "label": "Frontend Development",
+            "items": [
+              "HTML5",
+              "CSS3",
+              "JavaScript",
+              "React.js",
+              "Next.js",
+              "Responsive Design",
+              "UI UX Implementation"
+            ]
+          },
+          {
+            "label": "Backend Development",
+            "items": [
+              "Node.js",
+              "Express.js",
+              "REST APIs",
+              "MongoDB",
+              "SQL Databases",
+              "Authentication & Security",
+              "API Integration"
+            ]
+          },
+          {
+            "label": "UI UX Design",
+            "items": [
+              "Figma",
+              "Wireframing",
+              "Prototyping",
+              "User Flow Design",
+              "Design Systems",
+              "Brand Identity",
+              "Usability Optimization"
+            ]
+          },
+          {
+            "label": "Tools & Platforms",
+            "items": [
+              "Git & GitHub",
+              "Postman",
+              "Shell",
+              "Linux"
+            ]
+          },
+          {
+            "label": "Soft Skills",
+            "items": [
+              "Problem Solving",
+              "Communication",
+              "Time Management",
+              "Project Planning",
+              "Attention to Detail"
+            ]
+          }
+        ]
+      },
+      "stack": {
+        "items": [
+          {
+            "name": "Shell",
+            "icon": "/images/stacks/terminal-1.svg"
+          },
+          {
+            "name": "Linux",
+            "icon": "/images/stacks/ubuntu-4.svg"
+          },
+          {
+            "name": "Git",
+            "icon": "/images/stacks/git-icon.svg"
+          },
+          {
+            "name": "GitHub",
+            "icon": "/images/stacks/github.svg"
+          },
+          {
+            "name": "VS Code",
+            "icon": "/images/stacks/visual-studio-code-1.svg"
+          },
+          {
+            "name": "ChatGPT",
+            "icon": "/images/stacks/openai.svg"
+          },
+          {
+            "name": "React",
+            "icon": "/images/stacks/react-2.svg"
+          },
+          {
+            "name": "MongoDB",
+            "icon": "/images/stacks/mongodb-icon-1.svg"
+          },
+          {
+            "name": "figma",
+            "icon": "/images/stacks/figma-color.svg"
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Let’s Connect and Start Your Project.",
+      "subtitle": "I’m always ready to discuss new projects, answer your questions, and help bring your ideas to life. Reach out anytime I’m here to collaborate.",
+      "connect": {
+        "title": "Let’s Turn Your Ideas into Reality.",
+        "subtitle": "With years of experience in full stack development, UI UX design, and automation, I deliver solutions that are fast, reliable, and tailored to your needs. Let’s collaborate and make your project a success."
+      },
+      "media": {
+        "socialmedia": {
+          "instagram": "https://www.instagram.com/",
+          "linkedin": "https://www.linkedin.com/",
+          "twitter": "https://twitter.com/",
+          "github": "https://www.github.com/"
+        },
+        "personalcontact": {
+          "email": "email@example.com",
+          "phone": "+212600000000"
+        }
+      }
+    },
+    "blog": {
+      "title": "Ideas That Turn Into Results.",
+      "subtitle": "Articles about development, design, and problem solving based on real client work. Subscribe to get insights that matter.",
+      "posts": [
+        {
+          "id": 1,
+          "title": "Building Scalable React Apps",
+          "category": "React",
+          "description": "Building scalable React applications requires more than choosing the right framework. It involves structure, discipline, and long-term thinking. This article explores practical strategies for creating React projects that remain maintainable as they grow.",
+          "sections": [
+            {
+              "heading": "Introduction",
+              "content": "Many React applications begin as small projects with limited scope. At this stage, developers often prioritize speed over structure. However, as features grow and teams expand, poor architectural decisions quickly become a bottleneck. Scalability issues usually appear in the form of confusing folder structures, duplicated logic, and unpredictable state management."
+            },
+            {
+              "heading": "Designing a Scalable Project Structure",
+              "content": "A scalable React project starts with a clear and intentional structure. Separating concerns such as UI components, business logic, services, and hooks makes the codebase easier to understand and extend. When developers know exactly where new code belongs, productivity increases and onboarding new team members becomes significantly easier."
+            },
+            {
+              "heading": "Managing State Effectively",
+              "content": "State management is one of the most common sources of complexity in React applications. While local component state works well for isolated features, larger applications require shared state solutions. Choosing the right balance between local state, Context API, and external libraries helps prevent unnecessary re-renders and reduces mental overhead."
+            },
+            {
+              "heading": "Code Quality and Consistency",
+              "content": "Consistency plays a critical role in scalability. Naming conventions, coding standards, and reusable patterns reduce friction across teams. Clean, readable code is easier to refactor and less prone to bugs, especially as the application evolves."
+            },
+            {
+              "heading": "Thinking Beyond Today",
+              "content": "Scalable React applications are built with the future in mind. Investing time in documentation, testing, and thoughtful architecture may slow initial development slightly, but it pays off exponentially as the project grows."
+            }
+          ],
+          "date": "2026-01-15",
+          "slug": "scalable-react",
+          "image": "/images/blog/post1.jpg",
+          "likes": 24,
+          "views": 40
+        },
+        {
+          "id": 2,
+          "title": "UI UX as a Business Advantage",
+          "category": "UI UX",
+          "description": "UI and UX design directly influence how users perceive a product and how businesses perform. This article explains why design is not just visual decoration but a powerful strategic advantage.",
+          "sections": [
+            {
+              "heading": "Introduction",
+              "content": "Many companies still view UI and UX design as optional enhancements rather than core business investments. In reality, design often determines whether users trust a product, continue using it, or abandon it altogether."
+            },
+            {
+              "heading": "How UX Shapes User Behavior",
+              "content": "User experience design focuses on reducing friction and cognitive load. When users can achieve their goals quickly and intuitively, satisfaction increases. Poor UX, on the other hand, leads to frustration, higher bounce rates, and lost revenue."
+            },
+            {
+              "heading": "UI and Brand Trust",
+              "content": "Visual design strongly influences brand perception. Consistent layouts, thoughtful typography, and balanced spacing communicate professionalism and reliability. Users subconsciously associate good UI with quality and credibility."
+            },
+            {
+              "heading": "The Business Impact of Design",
+              "content": "Companies with strong UI/UX design often outperform competitors. Better design leads to higher conversion rates, reduced support costs, and stronger customer loyalty. Design decisions directly affect measurable business outcomes."
+            },
+            {
+              "heading": "Design as a Competitive Edge",
+              "content": "In crowded markets, features alone are not enough. Products that feel intuitive and polished stand out. UI and UX design become a key differentiator that influences long-term success."
+            }
+          ],
+          "date": "2026-01-28",
+          "slug": "ui-ux-business",
+          "image": "/images/blog/post2.jpg",
+          "likes": 98,
+          "views": 50
+        },
+        {
+          "id": 3,
+          "title": "From Idea to Product Workflow",
+          "category": "Workflow",
+          "description": "Transforming an idea into a successful product requires a clear and repeatable workflow. This article outlines a practical process used by experienced teams.",
+          "sections": [
+            {
+              "heading": "Starting With Clarity",
+              "content": "Every product begins with an idea, but ideas alone are not enough. Defining the problem, identifying the target audience, and clarifying business goals are essential steps before any design or development begins."
+            },
+            {
+              "heading": "Designing Before Building",
+              "content": "Wireframes and UI designs help validate assumptions early. This phase allows teams to visualize the product, identify usability issues, and align stakeholders before committing resources to development."
+            },
+            {
+              "heading": "Structured Development",
+              "content": "Development should follow a structured plan with clear milestones. Breaking features into smaller tasks allows teams to deliver value incrementally while maintaining quality and focus."
+            },
+            {
+              "heading": "Testing and Validation",
+              "content": "Testing ensures the product works as expected across devices and use cases. Feedback from real users often reveals issues that were not obvious during development."
+            },
+            {
+              "heading": "Launch and Continuous Improvement",
+              "content": "Launching a product is only the beginning. Continuous iteration based on analytics and user feedback helps the product evolve and remain competitive."
+            }
+          ],
+          "date": "2026-02-10",
+          "slug": "dev-workflow",
+          "image": "/images/blog/post3.jpg",
+          "likes": 16,
+          "views": 20
+        },
+        {
+          "id": 4,
+          "title": "Common Frontend Project Mistakes",
+          "category": "Frontend",
+          "description": "Frontend projects often fail due to avoidable mistakes rather than technical limitations. This article highlights common pitfalls and how to avoid them.",
+          "sections": [
+            {
+              "heading": "Poor Planning",
+              "content": "Many frontend issues originate from unclear requirements and rushed planning. Without a clear vision, teams often rewrite features multiple times, wasting time and resources."
+            },
+            {
+              "heading": "Overengineering",
+              "content": "Using complex architectures or too many libraries early in a project increases cognitive load and maintenance costs. Simplicity is often the most scalable solution."
+            },
+            {
+              "heading": "Ignoring Performance",
+              "content": "Unoptimized assets, excessive re-renders, and large bundles negatively affect user experience. Performance issues often go unnoticed until users complain."
+            },
+            {
+              "heading": "Lack of Standards",
+              "content": "Inconsistent naming, styling, and structure make projects harder to scale. Establishing standards early improves collaboration and maintainability."
+            }
+          ],
+          "date": "2026-02-22",
+          "slug": "frontend-mistakes",
+          "image": "/images/blog/post4.jpg",
+          "likes": 87,
+          "views": 30
+        },
+        {
+          "id": 5,
+          "title": "Design Systems: Why You Need One",
+          "category": "Design",
+          "description": "Design systems are essential for building consistent and scalable digital products. This article explains their value and long-term benefits.",
+          "sections": [
+            {
+              "heading": "What Is a Design System?",
+              "content": "A design system is a collection of reusable components, styles, and guidelines that define how a product looks and behaves."
+            },
+            {
+              "heading": "Consistency Across Interfaces",
+              "content": "Design systems ensure that buttons, forms, and layouts behave consistently across the application, improving usability and trust."
+            },
+            {
+              "heading": "Speed and Collaboration",
+              "content": "With shared components, designers and developers work faster and with fewer misunderstandings."
+            },
+            {
+              "heading": "Reducing Technical Debt",
+              "content": "Over time, design systems reduce duplication and simplify maintenance, making them a valuable long-term investment."
+            }
+          ],
+          "date": "2026-03-05",
+          "slug": "design-systems",
+          "image": "/images/blog/post5.jpg",
+          "likes": 32,
+          "views": 22
+        },
+        {
+          "id": 6,
+          "title": "Freelancer vs Agency Guide",
+          "category": "Freelancing",
+          "description": "Choosing between a freelancer and an agency is a strategic decision that affects budget, communication, and project outcomes. This article helps businesses and startups understand which option best fits their needs.",
+          "sections": [
+            {
+              "heading": "Understanding the Two Models",
+              "content": "Freelancers and agencies operate in fundamentally different ways. Freelancers usually work independently, handling projects directly with clients, while agencies provide teams with defined roles such as designers, developers, and project managers. Understanding this distinction is the first step toward making the right choice."
+            },
+            {
+              "heading": "Cost and Flexibility",
+              "content": "Freelancers often offer lower costs and greater flexibility, making them ideal for small or short-term projects. Agencies typically require higher budgets but provide structured processes, scalability, and predictable delivery timelines."
+            },
+            {
+              "heading": "Communication and Accountability",
+              "content": "Working with a freelancer means direct communication with the person doing the work, which can speed up decision-making. Agencies, however, provide accountability through contracts, project management, and backup resources if someone becomes unavailable."
+            },
+            {
+              "heading": "Project Complexity",
+              "content": "Simple websites or MVPs are often well suited for freelancers. Large, complex systems with multiple integrations and long-term maintenance requirements are usually better handled by agencies with multidisciplinary teams."
+            },
+            {
+              "heading": "Making the Right Choice",
+              "content": "The best option depends on project scope, timeline, and long-term goals. Evaluating requirements carefully helps avoid mismatched expectations and ensures successful collaboration."
+            }
+          ],
+          "date": "2026-03-18",
+          "slug": "freelancer-vs-agency",
+          "image": "/images/blog/post6.jpg",
+          "likes": 64,
+          "views": 54
+        },
+        {
+          "id": 7,
+          "title": "Turning Requirements Into Clean Code",
+          "category": "Coding",
+          "description": "Client requirements are often unclear or incomplete. This article explains how developers can transform ideas into structured, maintainable, production-ready code.",
+          "sections": [
+            {
+              "heading": "Understanding the Real Need",
+              "content": "Client requirements are rarely technical. They often describe problems rather than solutions. Developers must ask the right questions to uncover the real objectives behind each request."
+            },
+            {
+              "heading": "Breaking Requirements Into Features",
+              "content": "Large requirements should be divided into smaller features and tasks. This makes implementation clearer, reduces risk, and allows progress to be tracked effectively."
+            },
+            {
+              "heading": "Designing Before Coding",
+              "content": "Before writing code, developers should think about architecture, data flow, and edge cases. A few hours of planning can prevent weeks of refactoring later."
+            },
+            {
+              "heading": "Writing Clean and Maintainable Code",
+              "content": "Clean code focuses on readability and predictability. Meaningful naming, small functions, and clear separation of concerns make code easier to test and maintain."
+            },
+            {
+              "heading": "Validation and Iteration",
+              "content": "Frequent reviews and feedback loops ensure the implementation matches client expectations and allows adjustments before problems become costly."
+            }
+          ],
+          "date": "2026-04-02",
+          "slug": "client-to-code",
+          "image": "/images/blog/post7.jpg",
+          "likes": 14,
+          "views": 30
+        },
+        {
+          "id": 8,
+          "title": "Performance Tips for Web Apps",
+          "category": "Performance",
+          "description": "Web performance plays a critical role in user satisfaction and conversion rates. This article covers practical techniques to make applications feel fast and responsive.",
+          "sections": [
+            {
+              "heading": "Why Performance Matters",
+              "content": "Users expect instant feedback. Even small delays can lead to frustration, reduced engagement, and higher bounce rates. Performance is not a luxury; it is a requirement."
+            },
+            {
+              "heading": "Optimizing Assets",
+              "content": "Large images, uncompressed files, and unused code significantly slow down applications. Optimizing assets is one of the fastest ways to improve load times."
+            },
+            {
+              "heading": "Efficient Rendering",
+              "content": "Avoiding unnecessary re-renders and managing component updates efficiently improves runtime performance. Smart rendering strategies reduce CPU usage and battery drain."
+            },
+            {
+              "heading": "Network and API Optimization",
+              "content": "Reducing API calls, caching responses, and loading data only when needed improves perceived speed and reliability."
+            },
+            {
+              "heading": "Continuous Monitoring",
+              "content": "Performance optimization is an ongoing process. Monitoring tools help identify bottlenecks and guide future improvements."
+            }
+          ],
+          "date": "2026-04-14",
+          "slug": "web-performance",
+          "image": "/images/blog/post8.jpg",
+          "likes": 17,
+          "views": 19
+        },
+        {
+          "id": 9,
+          "title": "Why Maintenance Matters Post Launch",
+          "category": "Maintenance",
+          "description": "Launching a product is not the final step. Ongoing maintenance ensures stability, security, and long-term success.",
+          "sections": [
+            {
+              "heading": "The Illusion of Completion",
+              "content": "Many teams treat launch as the end of a project. In reality, launch marks the beginning of real-world usage and new challenges."
+            },
+            {
+              "heading": "Security and Stability",
+              "content": "Regular updates and patches protect users from vulnerabilities and ensure compatibility with evolving platforms."
+            },
+            {
+              "heading": "Adapting to User Needs",
+              "content": "User behavior changes over time. Maintenance allows products to evolve based on feedback and analytics."
+            },
+            {
+              "heading": "Preventing Technical Debt",
+              "content": "Small issues left unattended grow into major problems. Continuous maintenance keeps systems healthy and manageable."
+            }
+          ],
+          "date": "2026-04-27",
+          "slug": "maintenance-after-launch",
+          "image": "/images/blog/post9.jpg",
+          "likes": 59,
+          "views": 84
+        },
+        {
+          "id": 10,
+          "title": "Building Client Trust",
+          "category": "Client Management",
+          "description": "Trust is built through honesty, clarity, and consistent communication. This article explains how professionals create long-lasting client relationships.",
+          "sections": [
+            {
+              "heading": "Why Trust Matters",
+              "content": "Trust is the foundation of successful client relationships. Without it, even technically perfect work can fail."
+            },
+            {
+              "heading": "Clear Communication",
+              "content": "Regular updates, clear timelines, and honest discussions reduce uncertainty and build confidence."
+            },
+            {
+              "heading": "Managing Expectations",
+              "content": "Setting realistic expectations from the beginning prevents disappointment and conflict later."
+            },
+            {
+              "heading": "Handling Problems Transparently",
+              "content": "Mistakes happen. Addressing issues openly and proactively strengthens trust rather than damaging it."
+            },
+            {
+              "heading": "Long-Term Relationships",
+              "content": "Transparency leads to repeat work, referrals, and long-term partnerships that benefit both clients and professionals."
+            }
+          ],
+          "date": "2026-05-08",
+          "slug": "client-trust",
+          "image": "/images/blog/post10.jpg",
+          "likes": 10,
+          "views": 59
+        }
+      ],
+      "subscribeTitle": "Get useful insights straight to your inbox",
+      "subscribesubTitle": "Join developers and founders who receive practical articles, tips, and real world lessons from my work. No spam. Unsubscribe anytime.",
+      "articleTitle": "Master Your Craft with Every Article",
+      "articlesubTitle": "Discover practical tips, design insights, and coding strategies that elevate your skills and accelerate your projects"
+    },
+    "comments": [
+      {
+        "id": 1,
+        "postId": 1,
+        "author": "Mark T.",
+        "email": "mark@example.com",
+        "message": "This article really helped me organize my React project better.",
+        "date": "2026-01-16",
+        "status": "approved",
+        "replies": [
+          {
+            "id": 101,
+            "author": "Abderrahim",
+            "role": "admin",
+            "message": "Glad it helped you Mark! Structure makes a huge difference long-term.",
+            "date": "2026-01-16"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "postId": 1,
+        "author": "Sofia L.",
+        "email": "sofia@example.com",
+        "message": "Do you recommend Context API or Redux for large apps?",
+        "date": "2026-01-17",
+        "status": "approved",
+        "replies": []
+      },
+      {
+        "id": 3,
+        "postId": 1,
+        "author": "Jason K.",
+        "email": "jason@example.com",
+        "message": "Clear explanation, especially the state management part.",
+        "date": "2026-01-18",
+        "status": "approved",
+        "replies": [
+          {
+            "id": 102,
+            "author": "Abderrahim",
+            "role": "admin",
+            "message": "Thanks Jason! State management is where most apps struggle.",
+            "date": "2026-01-18"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "postId": 2,
+        "author": "Nadia R.",
+        "email": "nadia@example.com",
+        "message": "UI UX is always underestimated. This explains it perfectly.",
+        "date": "2026-01-29",
+        "status": "approved",
+        "replies": []
+      },
+      {
+        "id": 5,
+        "postId": 2,
+        "author": "Alex P.",
+        "email": "alex@example.com",
+        "message": "Loved the business perspective, very practical.",
+        "date": "2026-01-30",
+        "status": "approved",
+        "replies": [
+          {
+            "id": 103,
+            "author": "Abderrahim",
+            "role": "admin",
+            "message": "Thank you Alex! UX decisions should always support business goals.",
+            "date": "2026-01-30"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "postId": 2,
+        "author": "Hassan M.",
+        "email": "hassan@example.com",
+        "message": "Do you work with startups on UX audits?",
+        "date": "2026-01-31",
+        "status": "approved",
+        "replies": []
+      },
+      {
+        "id": 7,
+        "postId": 3,
+        "author": "Emily W.",
+        "email": "emily@example.com",
+        "message": "The workflow breakdown is super helpful.",
+        "date": "2026-02-11",
+        "status": "approved",
+        "replies": []
+      },
+      {
+        "id": 8,
+        "postId": 3,
+        "author": "Omar B.",
+        "email": "omar@example.com",
+        "message": "This is exactly how we failed our first MVP 😅",
+        "date": "2026-02-12",
+        "status": "approved",
+        "replies": [
+          {
+            "id": 104,
+            "author": "Abderrahim",
+            "role": "admin",
+            "message": "You’re not alone Omar 😄 Most teams learn this the hard way.",
+            "date": "2026-02-12"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "postId": 3,
+        "author": "Laura D.",
+        "email": "laura@example.com",
+        "message": "Would love a follow-up article on launch strategies.",
+        "date": "2026-02-13",
+        "status": "approved",
+        "replies": []
+      }
+    ],
+    "projects": {
+      "title": "Projects That Solve Real Problems",
+      "subtitle": "I design and build modern web applications with clean UI, scalable architecture, and real business value.",
+      "project": [
+        {
+          "id": 1,
+          "title": "Developer Portfolio Dashboard",
+          "category": "fullstack",
+          "description": "A complete developer portfolio platform inspired by the Visual Studio Code interface. This project includes user authentication, a private admin dashboard, content management for articles and projects, and real-time analytics. It allows developers to manage their public portfolio dynamically while tracking engagement metrics such as views, likes, and subscribers.",
+          "stack": [
+            "React",
+            "Vite",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "JWT Authentication",
+            "Chart.js",
+            "CSS Modules"
+          ],
+          "date": "2026-01-10",
+          "slug": "dev-portfolio-dashboard",
+          "image": "/images/projects/project1.jpg",
+          "likes": 18,
+          "views": 40,
+          "links": {
+            "demo": "https://your-demo-link.com/portfolio-dashboard",
+            "github": "https://github.com/yourusername/dev-portfolio-dashboard",
+            "figma": "https://figma.com/file/your-figma-id"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Admin Dashboard & Analytics Panel",
+          "category": "frontend",
+          "description": "A responsive and scalable admin dashboard designed for managing users, content, and system data. It features advanced analytics dashboards, interactive charts, sortable data tables, and role-based UI components. The layout is optimized for desktop and tablet use, making it suitable for SaaS platforms and internal tools.",
+          "stack": [
+            "React",
+            "Vite",
+            "JavaScript",
+            "Recharts",
+            "Tailwind CSS",
+            "REST API Integration"
+          ],
+          "date": "2026-01-22",
+          "slug": "admin-dashboard-analytics",
+          "image": "/images/projects/project2.jpg",
+          "likes": 47,
+          "views": 94,
+          "links": {
+            "demo": "https://your-demo-link.com/admin-dashboard",
+            "github": "https://github.com/yourusername/admin-dashboard",
+            "figma": "https://figma.com/file/your-figma-id"
+          }
+        },
+        {
+          "id": 3,
+          "title": "SaaS Landing & Auth System",
+          "category": "frontend",
+          "description": "A modern SaaS landing page combined with a complete authentication system. It includes login, registration, email verification, password recovery, and protected routes. The UI is conversion-focused and optimized for startups looking to validate products or onboard users quickly.",
+          "stack": [
+            "React",
+            "Vite",
+            "React Router",
+            "Axios",
+            "JWT",
+            "Form Validation",
+            "CSS Animations"
+          ],
+          "date": "2026-02-05",
+          "slug": "saas-auth-system",
+          "image": "/images/projects/project3.jpg",
+          "likes": 20,
+          "views": 34,
+          "links": {
+            "demo": "https://your-demo-link.com/saas-auth",
+            "github": "https://github.com/yourusername/saas-auth-system",
+            "figma": "https://figma.com/file/your-figma-id"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Content Management Interface",
+          "category": "frontend",
+          "description": "A clean and intuitive content management interface for handling articles, projects, comments, and user interactions. This UI is designed for speed and usability, allowing administrators to create, edit, publish, and monitor content efficiently from a single dashboard.",
+          "stack": [
+            "React",
+            "Vite",
+            "Context API",
+            "Reusable Components",
+            "CSS Modules",
+            "REST API"
+          ],
+          "date": "2026-02-18",
+          "slug": "content-management-ui",
+          "image": "/images/projects/project4.png",
+          "likes": 12,
+          "views": 98,
+          "links": {
+            "demo": "https://your-demo-link.com/cms-ui",
+            "github": "https://github.com/yourusername/content-management-ui",
+            "figma": "https://figma.com/file/your-figma-id"
+          }
+        },
+        {
+          "id": 5,
+          "title": "Data Visualization Dashboard",
+          "category": "frontend",
+          "description": "An interactive data visualization dashboard built to track application performance and user engagement. It presents metrics such as views, likes, subscribers, and activity logs using dynamic charts and real-time updates, helping decision-makers analyze trends efficiently.",
+          "stack": [
+            "React",
+            "Vite",
+            "Chart.js",
+            "Recharts",
+            "API Integration",
+            "Responsive Design"
+          ],
+          "date": "2026-03-02",
+          "slug": "data-visualization-dashboard",
+          "image": "/images/projects/project5.png",
+          "likes": 19,
+          "views": 57,
+          "links": {
+            "demo": "https://your-demo-link.com/data-dashboard",
+            "github": "https://github.com/yourusername/data-visualization-dashboard"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Modern Blog Platform UI",
+          "category": "frontend",
+          "description": "A fast, SEO-friendly blog platform interface featuring category filtering, full-text search, pagination, and clean article layouts. Designed for content creators, it emphasizes readability, performance, and structured content presentation.",
+          "stack": [
+            "React",
+            "Vite",
+            "SEO Optimization",
+            "Dynamic Routing",
+            "Markdown Rendering",
+            "CSS Grid"
+          ],
+          "date": "2026-03-15",
+          "slug": "modern-blog-platform",
+          "image": "/images/projects/project6.jpg",
+          "likes": 96,
+          "views": 26,
+          "links": {
+            "demo": "https://your-demo-link.com/blog-ui",
+            "github": "https://github.com/yourusername/modern-blog-ui"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Project Management Frontend",
+          "category": "frontend",
+          "description": "A structured project management interface designed to track tasks, statuses, deadlines, and progress. It provides visual indicators for project health and timelines, making it ideal for freelancers, agencies, and internal team workflows.",
+          "stack": [
+            "React",
+            "Vite",
+            "State Management",
+            "Kanban UI",
+            "Reusable Components",
+            "Responsive Layout"
+          ],
+          "date": "2026-03-29",
+          "slug": "project-management-ui",
+          "image": "/images/projects/project7.jpg",
+          "likes": 58,
+          "views": 50,
+          "links": {
+            "demo": "https://your-demo-link.com/project-management",
+            "github": "https://github.com/yourusername/project-management-ui"
+          }
+        },
+        {
+          "id": 8,
+          "title": "Authentication & Security Flow",
+          "category": "frontend",
+          "description": "A complete authentication and security flow system including login, registration, password reset, email verification, and session handling. Built with modular modal components and strong validation patterns to ensure a secure and smooth user experience.",
+          "stack": [
+            "React",
+            "Vite",
+            "JWT",
+            "Form Validation",
+            "Protected Routes",
+            "Security Best Practices"
+          ],
+          "date": "2026-04-11",
+          "slug": "authentication-security-flow",
+          "image": "/images/projects/project8.jpg",
+          "likes": 73,
+          "views": 67,
+          "links": {
+            "demo": "https://your-demo-link.com/auth-flow",
+            "github": "https://github.com/yourusername/auth-security-flow"
+          }
+        }
+      ],
+      "projectTitle": "My Work, Your Inspiration",
+      "projectsubTitle": "Explore a curated collection of web, mobile, and design projects crafted with precision, creativity, and real world impact. See how ideas turn into results."
+    },
+    "home": {
+      "title": "Building Digital Products That Perform",
+      "subtitle": "Full Stack Development & UI UX Design focused on performance, scalability, and user experience.",
+      "services": {
+        "frontend": {
+          "title": "Front End Development",
+          "description": "Modern, fast, and responsive interfaces built with clean, scalable, and maintainable code."
+        },
+        "backend": {
+          "title": "Back End Development",
+          "description": "Secure, scalable, and efficient server side solutions for real-world applications."
+        },
+        "fullstack": {
+          "title": "Full Stack Development",
+          "description": "Complete end to end solutions from concept to deployment."
+        },
+        "uiux": {
+          "title": "UI UX Design",
+          "description": "User centered designs that convert visitors into customers."
+        }
+      },
+      "pricing": {
+        "frontend": {
+          "title": "Front End Website",
+          "price": "$100+",
+          "includes": [
+            "Responsive design",
+            "Modern UI",
+            "Fast performance",
+            "SEO friendly",
+            "Clean code"
+          ]
+        },
+        "backend": {
+          "title": "Back End System",
+          "price": "$150+",
+          "includes": [
+            "Secure APIs",
+            "Database setup",
+            "Auth system",
+            "Server logic",
+            "Optimized queries"
+          ]
+        },
+        "fullstack": {
+          "title": "Full Stack Application",
+          "price": "$500+",
+          "includes": [
+            "Complete solution",
+            "Scalable system",
+            "UI & backend",
+            "Deployment ready",
+            "Maintenance support"
+          ]
+        },
+        "uiux": {
+          "title": "UI UX Design",
+          "price": "$100+",
+          "includes": [
+            "User research",
+            "Wireframes",
+            "High fidelity UI",
+            "Design system",
+            "Prototype delivery"
+          ]
+        }
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "projectId": 1,
+          "profile": "/images/testimonials/avatar2.jpg",
+          "name": "Sarah M.",
+          "job": "Startup Founder",
+          "email": "sarah.m@example.com",
+          "date": "2026-01-08",
+          "message": "Professional, fast, and highly reliable. Delivered beyond expectations."
+        },
+        {
+          "id": 2,
+          "projectId": 1,
+          "profile": "/images/testimonials/avatar1.jpg",
+          "name": "David K.",
+          "job": "Product Manager",
+          "email": "david.k@example.com",
+          "date": "2026-01-10",
+          "message": "Excellent communication and clean, scalable codebase."
+        },
+        {
+          "id": 3,
+          "projectId": 2,
+          "profile": "/images/testimonials/avatar4.jpg",
+          "name": "Amina B.",
+          "job": "E-commerce Owner",
+          "email": "amina.b@example.com",
+          "date": "2026-01-12",
+          "message": "Our sales improved thanks to the new user experience."
+        },
+        {
+          "id": 4,
+          "projectId": 2,
+          "profile": "/images/testimonials/avatar3.jpg",
+          "name": "James L.",
+          "job": "CTO",
+          "email": "james.l@example.com",
+          "date": "2026-01-14",
+          "message": "Strong technical skills and great architectural decisions."
+        },
+        {
+          "id": 5,
+          "projectId": 3,
+          "profile": "/images/testimonials/avatar5.jpg",
+          "name": "Youssef A.",
+          "job": "Agency Owner",
+          "email": "youssef.a@example.com",
+          "date": "2026-01-16",
+          "message": "Reliable partner for complex web projects."
+        },
+        {
+          "id": 6,
+          "projectId": 3,
+          "profile": "/images/testimonials/avatar6.jpg",
+          "name": "Emma R.",
+          "job": "Marketing Lead",
+          "email": "emma.r@example.com",
+          "date": "2026-01-18",
+          "message": "Fast website with amazing design and performance."
+        },
+        {
+          "id": 7,
+          "projectId": 4,
+          "profile": "/images/testimonials/avatar7.jpg",
+          "name": "Liam P.",
+          "job": "Fullstack Developer",
+          "email": "liam.p@example.com",
+          "date": "2026-01-20",
+          "message": "The analytics panel makes tracking so easy and clear."
+        },
+        {
+          "id": 8,
+          "projectId": 4,
+          "profile": "/images/testimonials/avatar8.jpg",
+          "name": "Olivia W.",
+          "job": "Operations Manager",
+          "email": "olivia.w@example.com",
+          "date": "2026-01-22",
+          "message": "Charts and data tables are intuitive and interactive."
+        },
+        {
+          "id": 9,
+          "projectId": 8,
+          "profile": "/images/testimonials/avatar9.jpg",
+          "name": "Noah T.",
+          "job": "Startup CEO",
+          "email": "noah.t@example.com",
+          "date": "2026-01-24",
+          "message": "The auth flow is smooth and secure for all users."
+        },
+        {
+          "id": 10,
+          "projectId": 6,
+          "profile": "/images/testimonials/avatar10.jpg",
+          "name": "Sophia G.",
+          "job": "Content Manager",
+          "email": "sophia.g@example.com",
+          "date": "2026-01-26",
+          "message": "Managing content became effortless with this intuitive interface."
+        },
+        {
+          "id": 11,
+          "projectId": 5,
+          "profile": "/images/testimonials/avatar11.jpg",
+          "name": "Mason H.",
+          "job": "Data Analyst",
+          "email": "mason.h@example.com",
+          "date": "2026-01-28",
+          "message": "Visualizations are insightful and help in decision making."
+        },
+        {
+          "id": 12,
+          "projectId": 6,
+          "profile": "/images/testimonials/avatar12.jpg",
+          "name": "Isabella F.",
+          "job": "UI Designer",
+          "email": "isabella.f@example.com",
+          "date": "2026-01-30",
+          "message": "UI is clean, responsive, and user-friendly. Excellent work!"
+        },
+        {
+          "id": 13,
+          "projectId": 7,
+          "profile": "/images/testimonials/avatar13.jpg",
+          "name": "Ethan C.",
+          "job": "Project Manager",
+          "email": "ethan.c@example.com",
+          "date": "2026-02-01",
+          "message": "Project management UI helps track everything efficiently and visually."
+        },
+        {
+          "id": 14,
+          "projectId": 8,
+          "profile": "/images/testimonials/avatar14.jpg",
+          "name": "Mia S.",
+          "job": "Security Engineer",
+          "email": "mia.s@example.com",
+          "date": "2026-02-03",
+          "message": "Authentication and security flow is well implemented and secure."
+        }
+      ],
+      "how_i_work": {
+        "steps": [
+          {
+            "title": "Discovery",
+            "description": "I start by understanding your business goals, target audience, and project requirements to ensure the solution aligns perfectly with your vision."
+          },
+          {
+            "title": "Planning",
+            "description": "I define the project structure, choose the right technology stack, and create a clear roadmap with milestones and realistic timelines."
+          },
+          {
+            "title": "Design",
+            "description": "I design intuitive user interfaces and engaging user experiences that focus on usability, accessibility, and modern visual standards."
+          },
+          {
+            "title": "Development",
+            "description": "I build scalable, high-performance solutions using clean code, best practices, and modern technologies to ensure long-term maintainability."
+          },
+          {
+            "title": "Delivery",
+            "description": "I thoroughly test the product, deploy it to production, and provide ongoing support to ensure smooth performance and future improvements."
+          }
+        ]
+      }
+    },
+    "users": [
+      {
+        "id": 1,
+        "name": "Adam Smith",
+        "email": "adam.smith@example.com",
+        "date": "2026-01-05",
+        "role": "user"
+      },
+      {
+        "id": 2,
+        "name": "Sara Johnson",
+        "email": "sara.johnson@example.com",
+        "date": "2026-01-07",
+        "role": "user"
+      },
+      {
+        "id": 3,
+        "name": "Omar Khalid",
+        "email": "omar.khalid@example.com",
+        "date": "2026-01-10",
+        "role": "user"
+      },
+      {
+        "id": 4,
+        "name": "Lina Ahmed",
+        "email": "lina.ahmed@example.com",
+        "date": "2026-01-12",
+        "role": "user"
+      },
+      {
+        "id": 5,
+        "name": "James Brown",
+        "email": "james.brown@example.com",
+        "date": "2026-01-14",
+        "role": "user"
+      },
+      {
+        "id": 6,
+        "name": "Fatima Zahra",
+        "email": "fatima.zahra@example.com",
+        "date": "2026-01-16",
+        "role": "user"
+      },
+      {
+        "id": 7,
+        "name": "Youssef El Amrani",
+        "email": "youssef.elamrani@example.com",
+        "date": "2026-01-18",
+        "role": "user"
+      },
+      {
+        "id": 8,
+        "name": "Emily Watson",
+        "email": "emily.watson@example.com",
+        "date": "2026-01-20",
+        "role": "user"
+      },
+      {
+        "id": 9,
+        "name": "Hassan Ben Ali",
+        "email": "hassan.benali@example.com",
+        "date": "2026-01-22",
+        "role": "user"
+      },
+      {
+        "id": 10,
+        "name": "Noah Turner",
+        "email": "noah.turner@example.com",
+        "date": "2026-01-24",
+        "role": "user"
+      },
+      {
+        "id": 11,
+        "name": "Amina Idrissi",
+        "email": "amina.idrissi@example.com",
+        "date": "2026-01-26",
+        "role": "user"
+      },
+      {
+        "id": 12,
+        "name": "Lucas Martin",
+        "email": "lucas.martin@example.com",
+        "date": "2026-01-28",
+        "role": "user"
+      },
+      {
+        "id": 13,
+        "name": "Imane Boussif",
+        "email": "imane.boussif@example.com",
+        "date": "2026-02-01",
+        "role": "user"
+      },
+      {
+        "id": 14,
+        "name": "Daniel Moore",
+        "email": "daniel.moore@example.com",
+        "date": "2026-02-03",
+        "role": "user"
+      },
+      {
+        "id": 15,
+        "name": "Khadija Rahmani",
+        "email": "khadija.rahmani@example.com",
+        "date": "2026-02-05",
+        "role": "user"
+      },
+      {
+        "id": 16,
+        "name": "Ryan Cooper",
+        "email": "ryan.cooper@example.com",
+        "date": "2026-02-07",
+        "role": "user"
+      },
+      {
+        "id": 17,
+        "name": "Mehdi Saadi",
+        "email": "mehdi.saadi@example.com",
+        "date": "2026-02-09",
+        "role": "user"
+      },
+      {
+        "id": 18,
+        "name": "Sophia Lee",
+        "email": "sophia.lee@example.com",
+        "date": "2026-02-11",
+        "role": "user"
+      },
+      {
+        "id": 19,
+        "name": "Anas Mouline",
+        "email": "anas.mouline@example.com",
+        "date": "2026-02-13",
+        "role": "user"
+      },
+      {
+        "id": 20,
+        "name": "Benjamin Clark",
+        "email": "benjamin.clark@example.com",
+        "date": "2026-02-15",
+        "role": "user"
+      },
+      {
+        "id": 21,
+        "name": "Salma Bennani",
+        "email": "salma.bennani@example.com",
+        "date": "2026-02-17",
+        "role": "user"
+      },
+      {
+        "id": 22,
+        "name": "Ethan Miller",
+        "email": "ethan.miller@example.com",
+        "date": "2026-02-19",
+        "role": "user"
+      },
+      {
+        "id": 23,
+        "name": "Nour El Youssfi",
+        "email": "nour.elyoussfi@example.com",
+        "date": "2026-02-21",
+        "role": "user"
+      },
+      {
+        "id": 24,
+        "name": "William Scott",
+        "email": "william.scott@example.com",
+        "date": "2026-02-23",
+        "role": "user"
+      }
+    ],
+    "subscribers": [
+      {
+        "id": 1,
+        "email": "sub1@example.com",
+        "date": "2026-01-02"
+      },
+      {
+        "id": 2,
+        "email": "sub2@example.com",
+        "date": "2026-01-04"
+      },
+      {
+        "id": 3,
+        "email": "sub3@example.com",
+        "date": "2026-01-06"
+      },
+      {
+        "id": 4,
+        "email": "sub4@example.com",
+        "date": "2026-01-08"
+      },
+      {
+        "id": 5,
+        "email": "sub5@example.com",
+        "date": "2026-01-10"
+      },
+      {
+        "id": 6,
+        "email": "sub6@example.com",
+        "date": "2026-01-12"
+      },
+      {
+        "id": 7,
+        "email": "sub7@example.com",
+        "date": "2026-01-14"
+      },
+      {
+        "id": 8,
+        "email": "sub8@example.com",
+        "date": "2026-01-16"
+      },
+      {
+        "id": 9,
+        "email": "sub9@example.com",
+        "date": "2026-01-18"
+      },
+      {
+        "id": 10,
+        "email": "sub10@example.com",
+        "date": "2026-01-20"
+      },
+      {
+        "id": 11,
+        "email": "sub11@example.com",
+        "date": "2026-01-22"
+      },
+      {
+        "id": 12,
+        "email": "sub12@example.com",
+        "date": "2026-01-24"
+      },
+      {
+        "id": 13,
+        "email": "sub13@example.com",
+        "date": "2026-01-26"
+      },
+      {
+        "id": 14,
+        "email": "sub14@example.com",
+        "date": "2026-01-28"
+      },
+      {
+        "id": 15,
+        "email": "sub15@example.com",
+        "date": "2026-01-30"
+      },
+      {
+        "id": 16,
+        "email": "sub16@example.com",
+        "date": "2026-02-01"
+      },
+      {
+        "id": 17,
+        "email": "sub17@example.com",
+        "date": "2026-02-03"
+      },
+      {
+        "id": 18,
+        "email": "sub18@example.com",
+        "date": "2026-02-05"
+      },
+      {
+        "id": 19,
+        "email": "sub19@example.com",
+        "date": "2026-02-07"
+      },
+      {
+        "id": 20,
+        "email": "sub20@example.com",
+        "date": "2026-02-09"
+      },
+      {
+        "id": 21,
+        "email": "sub21@example.com",
+        "date": "2026-02-11"
+      },
+      {
+        "id": 22,
+        "email": "sub22@example.com",
+        "date": "2026-02-13"
+      },
+      {
+        "id": 23,
+        "email": "sub23@example.com",
+        "date": "2026-02-15"
+      },
+      {
+        "id": 24,
+        "email": "sub24@example.com",
+        "date": "2026-02-17"
+      },
+      {
+        "id": 25,
+        "email": "sub25@example.com",
+        "date": "2026-02-19"
+      },
+      {
+        "id": 26,
+        "email": "sub26@example.com",
+        "date": "2026-02-21"
+      },
+      {
+        "id": 27,
+        "email": "sub27@example.com",
+        "date": "2026-02-23"
+      },
+      {
+        "id": 28,
+        "email": "sub28@example.com",
+        "date": "2026-02-25"
+      },
+      {
+        "id": 29,
+        "email": "sub29@example.com",
+        "date": "2026-02-27"
+      },
+      {
+        "id": 30,
+        "email": "sub30@example.com",
+        "date": "2026-03-01"
+      },
+      {
+        "id": 31,
+        "email": "sub31@example.com",
+        "date": "2026-03-03"
+      },
+      {
+        "id": 32,
+        "email": "sub32@example.com",
+        "date": "2026-03-05"
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+/* hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.hero .title {
+  font-size: 50px;
+  line-height: 1.5em;
+  font-weight: 700;
+  text-transform: capitalize;
+  max-width: 850px;
+  color: var(--text-color-prim);
+}
+
+.hero .subTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.8em;
+  text-transform: capitalize;
+  max-width: 450px;
+  color: var(--text-color-sec);
+}
+
+/* hero */
+
+/* projects */
+
+.projects {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects .commentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--comment-title);
+}
+
+.projects .projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+}
+
+.projects .projectsGrid .projectCard {
+  background: var(--background-color-sec);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projects .projectsGrid .projectCard .projectImageWrapper {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.projects .projectsGrid .projectCard .projectImageWrapper .projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects .projectsGrid .projectCard .projectContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-top: 1px solid var(--border-color);
+}
+
+.projects .projectsGrid .projectCard .projectContent .projectHeader .linkTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.projects .projectsGrid .projectCard .projectContent .projectHeader .linkTitle .projectTitle {
+  padding: 0px 10px;
+  color: var(--text-color-prim);
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  text-transform: capitalize;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.projects .projectsGrid .projectCard .projectContent .projectHeader .linkTitle .linkIcon {
+  padding: 20px 10px;
+  color: var(--section-value);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-left: 1px solid var(--border-color);
+}
+
+/* projects */
+
+/* media query */
+
+@media (max-width: 1250px) {
+
+  /* hero */
+  .hero .title {
+    font-size: 40px;
+  }
+
+  /* hero */
+}
+
+@media (max-width: 650px) {
+
+  /* hero */
+  .hero .title {
+    font-size: 30px;
+  }
+
+  /* hero */
+
+  /* projects */
+  .projects .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  /* projects */
+}
+
+@media (max-width: 450px) {
+
+  /* hero */
+  .hero .title {
+    font-size: 20px;
+  }
+
+  /* hero */
+}
+
+/* media query */

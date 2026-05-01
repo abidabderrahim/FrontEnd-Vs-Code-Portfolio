@@ -1,0 +1,720 @@
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.hero .title {
+    font-size: 50px;
+    line-height: 1.5em;
+    font-weight: 700;
+    text-transform: capitalize;
+    max-width: 850px;
+    color: var(--text-color-prim);
+}
+
+.hero .subTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    text-transform: capitalize;
+    max-width: 450px;
+    color: var(--text-color-sec);
+}
+
+/* hero */
+
+/* work */
+
+.work {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.work .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.work .projectsGrid .projectCard {
+    background: var(--background-color-sec);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.work .projectsGrid .projectCard .projectImageWrapper {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.work .projectsGrid .projectCard .projectImageWrapper .projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work .projectsGrid .projectCard .projectContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid var(--border-color);
+}
+
+.work .projectsGrid .projectCard .projectContent .projectHeader .linkTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.work .projectsGrid .projectCard .projectContent .projectHeader .linkTitle .projectTitle {
+    padding: 0px 10px;
+    color: var(--text-color-prim);
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.work .projectsGrid .projectCard .projectContent .projectHeader .linkTitle .linkIcon {
+    padding: 20px 10px;
+    color: var(--section-value);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-left: 1px solid var(--border-color);
+}
+
+.work .viewAll {
+    display: flex;
+    justify-content: end;
+}
+
+.work .viewBtn {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    align-self: flex-start;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.work .viewBtn .btnText {
+    padding: 0 16px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+    background: transparent;
+    transition: color 0.25s ease;
+}
+
+.work .viewBtn .btnIcon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color-prim);
+    border-left: 1px solid var(--border-color);
+    color: var(--text-color-sec);
+    font-size: 1.2rem;
+    transition: all 0.25s ease;
+}
+
+.work .viewBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+.work .viewBtn:hover .btnIcon {
+    background: var(--text-color-prim);
+    color: var(--background-color-prim);
+}
+
+.work .viewBtn:hover .btnText {
+    color: var(--text-color-prim);
+}
+
+/* work */
+
+/* services */
+
+.services {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.services .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.services .servicesGrid .serviceCard {
+    padding: 2rem;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+}
+
+.services .servicesGrid .serviceCard .serviceHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.services .servicesGrid .serviceCard .serviceHeader .serviceIcon {
+    color: var(--text-color-prim);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.services .servicesGrid .serviceCard .serviceHeader .serviceTitle {
+    color: var(--text-color-prim);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.services .servicesGrid .serviceCard .serviceDescription {
+    color: var(--text-color-sec);
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* services */
+
+/* pricing */
+
+.pricing {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.pricing .pricingGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.pricing .pricingGrid .pricingCard {
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.pricing .pricingGrid .pricingCard .headding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.pricing .pricingGrid .pricingCard .headding .pricingIcon {
+    color: var(--text-color-prim);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.pricing .pricingGrid .pricingCard .headding .pricingTitle {
+    color: var(--text-color-prim);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.pricing .pricingGrid .pricingCard .pricingPrice {
+    color: var(--section-value);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.pricing .pricingGrid .pricingCard .pricingList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing .pricingGrid .pricingCard .pricingList li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-color-sec);
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.pricing .pricingGrid .pricingCard .pricingList li .checkIcon {
+    color: var(--text-color-sec);
+    font-size: 1.5rem;
+}
+
+/* pricing */
+
+/* testimonials */
+
+.testimonials {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonials .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.testimonials .testimonialsGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.testimonials .testimonialsGrid .testimonialCard {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    max-width: 450px;
+}
+
+.testimonials .testimonialsGrid .testimonialCard .testimonialAvatar {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials .testimonialsGrid .testimonialCard .testimonialContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.testimonials .testimonialsGrid .testimonialCard .testimonialContent .testimonialMessage {
+    color: var(--text-color-sec);
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.testimonials .testimonialsGrid .testimonialCard .testimonialContent .testimonialDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonials .testimonialsGrid .testimonialCard .testimonialContent .testimonialDetails .clientName {
+    color: var(--section-value);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.testimonials .testimonialsGrid .testimonialCard .testimonialContent .testimonialDetails .clientJob {
+    color: var(--text-color-prim);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.testimonials .showMore {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials .showMore .showBtn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text-color-sec);
+    background: transparent;
+    transition: color 0.25s ease;
+}
+
+.testimonials .showMore .showBtn:hover {
+    color: var(--text-color-prim);
+}
+
+/* testimonials */
+
+/* how i work */
+
+.howIwork {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.howIwork .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.howIwork .stepsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.howIwork .stepsList .stepItem {
+    padding: 18px 10px;
+    cursor: pointer;
+    border-top: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+}
+
+.howIwork .stepsList .stepItem:last-child {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.howIwork .stepsList .stepItem .topRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.howIwork .stepsList .stepItem .topRow .stepIndex {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--section-value);
+}
+
+.howIwork .stepsList .stepItem .topRow .stepTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--text-color-prim);
+    text-transform: capitalize;
+}
+
+.howIwork .stepsList .stepItem .hiddenContent {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: all 0.5s ease;
+}
+
+.howIwork .stepsList .stepItem.open .hiddenContent {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.howIwork .stepsList .stepItem .hiddenContent .description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    max-width: 850px;
+    color: var(--text-color-sec);
+    text-transform: none;
+}
+
+/* how i work */
+
+/* work */
+
+.posts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.posts .mainTitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--comment-title);
+}
+
+.posts .postsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.posts .postsGrid .postCard {
+    background: var(--background-color-sec);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.posts .postsGrid .postCard .postImageWrapper {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.posts .postsGrid .postCard .postImageWrapper .postImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts .postsGrid .postCard .postContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid var(--border-color);
+}
+
+.posts .postsGrid .postCard .postContent .postHeader .linkTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.posts .postsGrid .postCard .postContent .postHeader .linkTitle .postTitle {
+    padding: 0px 10px;
+    color: var(--text-color-prim);
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.posts .postsGrid .postCard .postContent .postHeader .linkTitle .linkIcon {
+    padding: 20px 10px;
+    color: var(--section-value);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-left: 1px solid var(--border-color);
+}
+
+.posts .viewAll {
+    display: flex;
+    justify-content: end;
+}
+
+.posts .viewBtn {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    align-self: flex-start;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: var(--background-color-prim);
+    border: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.posts .viewBtn .btnText {
+    padding: 0 16px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-sec);
+    background: transparent;
+    transition: color 0.25s ease;
+}
+
+.posts .viewBtn .btnIcon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color-prim);
+    border-left: 1px solid var(--border-color);
+    color: var(--text-color-sec);
+    font-size: 1.2rem;
+    transition: all 0.25s ease;
+}
+
+.posts .viewBtn:hover {
+    border-color: var(--text-color-prim);
+}
+
+.posts .viewBtn:hover .btnIcon {
+    background: var(--text-color-prim);
+    color: var(--background-color-prim);
+}
+
+.posts .viewBtn:hover .btnText {
+    color: var(--text-color-prim);
+}
+
+/* work */
+
+/* media query */
+
+@media (max-width: 1250px) {
+
+    /* hero */
+    .hero .title {
+        font-size: 40px;
+    }
+
+    /* hero */
+}
+
+@media (max-width: 650px) {
+
+    /* hero */
+    .hero .title {
+        font-size: 30px;
+    }
+
+    /* hero */
+
+    /* work */
+    .work .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* work */
+
+    /* services */
+    .services .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* services */
+
+    /* pricing */
+    .pricing .pricingGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* pricing */
+
+    /* blog */
+    .posts .postsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* blog */
+}
+
+@media (max-width: 450px) {
+
+    /* hero */
+    .hero .title {
+        font-size: 20px;
+    }
+
+    /* hero */
+
+    /* services */
+    .services .servicesGrid .serviceCard .serviceHeader {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    /* services */
+
+    /* pricing */
+    .pricing .pricingGrid .pricingCard .headding {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    /* pricing */
+
+    /* testimonilas */
+    .testimonials .testimonialsGrid .testimonialCard {
+        flex-direction: column;
+    }
+
+    .testimonials .testimonialsGrid .testimonialCard .testimonialContent .testimonialDetails {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    /* testimonials */
+}
+
+/* media query */

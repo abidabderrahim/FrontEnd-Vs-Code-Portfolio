@@ -1,0 +1,166 @@
+/* testimonial modal */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: var(--background-color-prim);
+  padding: 20px;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.testTitle {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color-prim);
+}
+
+.testCloseBtn {
+  padding: 0 16px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--background-color-prim);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  color: var(--text-color-prim);
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.uploadBox {
+  height: 200px;
+  width: 200px;
+  border: 1px dashed var(--border-color);
+  border-radius: 100%;
+  color: var(--text-color-prim);
+  font-size: .9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.uploadBox:hover {
+  border: 1px dashed var(--section-value);
+}
+
+.uploadBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  object-fit: cover;
+}
+
+.form .testimonialIn,
+.form .testimonialTexta {
+  flex: 1;
+  padding: 18px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  color: var(--text-color-prim);
+  background: var(--background-color-prim);
+  transition: 0.5s ease;
+}
+
+.form .testimonialIn:focus,
+.form .testimonialTexta:focus {
+  border-color: var(--section-value);
+  outline: none;
+}
+
+.form .testimonialTexta {
+  min-height: 120px;
+  resize: none;
+}
+
+.testimonialBtn {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  align-self: flex-start;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: var(--background-color-prim);
+  border: 1px solid var(--border-color);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.testimonialBtn .btnText {
+  padding: 0 16px;
+  height: 42px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-sec);
+  background: transparent;
+  transition: color 0.25s ease;
+}
+
+.testimonialBtn .btnIcon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color-prim);
+  border-left: 1px solid var(--border-color);
+  color: var(--text-color-sec);
+  font-size: 1.2rem;
+  transition: all 0.25s ease;
+}
+
+.testimonialBtn:hover {
+  border-color: var(--text-color-prim);
+}
+
+.testimonialBtn:hover .btnIcon {
+  background: var(--text-color-prim);
+  color: var(--background-color-prim);
+}
+
+.testimonialBtn:hover .btnText {
+  color: var(--text-color-prim);
+}
+
+.messageError {
+  display: flex;
+  align-items: start;
+  color: var(--section-value);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+/* testimonial modal */
