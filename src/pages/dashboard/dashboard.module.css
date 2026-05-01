@@ -217,6 +217,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  max-width: 100%;
+  justify-content: flex-start;
 }
 
 .articles .pagination button {
@@ -226,6 +228,7 @@
   color: #fff;
   cursor: pointer;
   border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .articles .pagination button:disabled {
