@@ -215,6 +215,7 @@
 .articles .pagination {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -383,6 +384,7 @@
 .projects .pagination {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -478,6 +480,7 @@
 .users .pagination {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -572,6 +575,7 @@
 .subscribers .pagination {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -712,6 +716,7 @@
 .testimonials .pagination {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
